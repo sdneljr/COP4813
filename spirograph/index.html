@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spirograph</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="lab-container">
+
+        <header>
+            <p class="eyebrow">WEB SYSTEMS 1</p>
+
+            <h1>Spirograph</h1>
+
+            <p class="subtitle">
+                Precision in Motion
+            </p>
+        </header>
+
+        <section class="spirograph-panel">
+
+            <canvas
+                id="spirographCanvas"
+                width="600"
+                height="600">
+            </canvas>
+
+            <button id="drawButton">
+                Generate Pattern
+            </button>
+
+            <p id="valuesDisplay">
+                R: -- &nbsp; | &nbsp;
+                r: -- &nbsp; | &nbsp;
+                O: --
+            </p>
+
+            <p id="statusMessage">
+                Ready to generate.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
