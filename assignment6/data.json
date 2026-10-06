@@ -1,0 +1,20 @@
+[
+  {
+    "team": "Jacksonville Jaguars",
+    "city": "Jacksonville",
+    "conference": "AFC",
+    "division": "AFC South"
+  },
+  {
+    "team": "Miami Dolphins",
+    "city": "Miami",
+    "conference": "AFC",
+    "division": "AFC East"
+  },
+  {
+    "team": "Tampa Bay Buccaneers",
+    "city": "Tampa",
+    "conference": "NFC",
+    "division": "NFC South"
+  }
+]

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida NFL Teams</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b1f3a;
+            color: white;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            color: #111;
+        }
+
+        th, td {
+            padding: 14px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d9e6f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Florida NFL Teams</h1>
+        <p>Team information loaded from an external JSON file.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>City</th>
+                    <th>Conference</th>
+                    <th>Division</th>
+                </tr>
+            </thead>
+
+            <tbody id="teamTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        fetch("data.json")
+            .then(response => response.json())
+            .then(data => {
+
+                let output = "";
+
+                data.forEach(team => {
+                    output += `
+                        <tr>
+                            <td>${team.team}</td>
+                            <td>${team.city}</td>
+                            <td>${team.conference}</td>
+                            <td>${team.division}</td>
+                        </tr>
+                    `;
+                });
+
+                document.getElementById("teamTable").innerHTML = output;
+            })
+            .catch(error => {
+                console.error("Error loading JSON:", error);
+            });
+    </script>
+
+</body>
+</html>
