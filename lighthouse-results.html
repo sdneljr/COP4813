@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mobile Lighthouse audit results for Sean's COP4813 website.">
+    <title>Lighthouse Results | COP4813</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .audit-container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .audit-container h1,
+        .audit-container h2 {
+            text-align: center;
+        }
+
+        .score-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .score-card {
+            background: #132b4f;
+            padding: 25px 15px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .score-number {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .performance {
+            color: #ffb347;
+        }
+
+        .excellent {
+            color: #36d987;
+        }
+
+        .analysis {
+            background: #132b4f;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+
+        .analysis p {
+            padding: 0;
+        }
+
+        .report-link {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            background: #1479c9;
+            color: white;
+            border-radius: 8px;
+            margin: 25px auto;
+            max-width: 320px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .report-link:hover,
+        .report-link:focus {
+            background: #0d5f9f;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .score-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .audit-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="audit-container">
+
+        <h1>Google Lighthouse Results</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="assignments.html">Assignments</a>
+        </nav>
+
+        <p>
+            This page presents the mobile Lighthouse
+            audit results for my COP4813 website.
+            The audit was performed using Google
+            Chrome Developer Tools in Navigation Mode.
+        </p>
+
+        <h2>Mobile Audit Scores</h2>
+
+        <section class="score-grid" aria-label="Audit scores">
+
+            <div class="score-card">
+                <h3>Performance</h3>
+                <div class="score-number performance">74</div>
+                <p>Needs Improvement</p>
+            </div>
+
+            <div class="score-card">
+                <h3>Accessibility</h3>
+                <div class="score-number excellent">98</div>
+                <p>Excellent</p>
+            </div>
+
+            <div class="score-card">
+                <h3>Best Practices</h3>
+                <div class="score-number excellent">100</div>
+                <p>Excellent</p>
+            </div>
+
+            <div class="score-card">
+                <h3>SEO</h3>
+                <div class="score-number excellent">100</div>
+                <p>Excellent</p>
+            </div>
+
+        </section>
+
+        <section class="analysis">
+            <h2>Audit Analysis</h2>
+
+            <h3>Performance - 74</h3>
+            <p>
+                Performance received the lowest score.
+                This indicates room for improvement in
+                mobile page loading and responsiveness.
+                Further review of the detailed audit
+                can help identify the main causes.
+            </p>
+
+            <h3>Accessibility - 98</h3>
+            <p>
+                The accessibility score was excellent.
+                The website performed well in this
+                category, although the audit identified
+                a small amount of room for improvement.
+            </p>
+
+            <h3>Best Practices - 100</h3>
+            <p>
+                The website received a perfect score
+                for the Best Practices category,
+                indicating that the tested standards
+                were satisfied.
+            </p>
+
+            <h3>SEO - 100</h3>
+            <p>
+                The website received a perfect SEO
+                score, meaning it satisfied all SEO
+                checks included in this Lighthouse audit.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                Overall, the website performed well
+                during mobile testing. The design
+                adjusts to smaller screens, and
+                the navigation remains usable.
+                Future improvements should focus
+                primarily on performance.
+            </p>
+        </section>
+
+        <h2>Complete Lighthouse Audit</h2>
+
+        <p>
+            The complete report contains the detailed
+            audit results, including identified issues,
+            diagnostics, and passed audits.
+        </p>
+
+        <a class="report-link"
+           href="lighthouse_report.html">
+            View Complete Lighthouse Report
+        </a>
+
+    </main>
+</body>
+</html>
