@@ -1,0 +1,118 @@
+
+[
+  {
+    "name": "WordPress",
+    "support": "Open-source software supported by a global developer community and independent hosting companies.",
+    "technology": "PHP, MySQL or MariaDB, HTML, CSS, and JavaScript.",
+    "capabilities": [
+      "Thousands of themes and plugins",
+      "Customizable pages, blogs, and online stores",
+      "REST API for connecting other applications"
+    ],
+    "limitations": [
+      "Plugins can introduce security risks",
+      "Frequent updates and maintenance are necessary",
+      "Too many plugins can reduce performance"
+    ],
+    "example": {
+      "name": "The New York Times Company",
+      "url": "https://nytco.com/"
+    },
+    "sources": [
+      "https://wordpress.org/about/requirements/",
+      "https://wordpress.org/showcase/"
+    ]
+  },
+  {
+    "name": "Drupal",
+    "support": "Open-source CMS supported by its developer community and the Drupal Association.",
+    "technology": "PHP, MySQL, MariaDB, PostgreSQL or SQLite, HTML, CSS, and JavaScript.",
+    "capabilities": [
+      "Advanced content organization",
+      "Custom modules and flexible permissions",
+      "Multilingual and large-scale website support"
+    ],
+    "limitations": [
+      "Steeper learning curve for beginners",
+      "Advanced customization may require developers",
+      "Maintenance and upgrades require planning"
+    ],
+    "example": {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/"
+    },
+    "sources": [
+      "https://www.drupal.org/docs/getting-started/system-requirements",
+      "https://new.drupal.org/case-study/nasagov"
+    ]
+  },
+  {
+    "name": "Joomla",
+    "support": "Open-source CMS maintained by volunteers and supported by Open Source Matters.",
+    "technology": "PHP, MySQL, MariaDB or PostgreSQL, HTML, CSS, and JavaScript.",
+    "capabilities": [
+      "Built-in multilingual support",
+      "Templates, extensions, and user permissions",
+      "Flexible content management for businesses"
+    ],
+    "limitations": [
+      "Some customization requires technical skills",
+      "Extensions may create compatibility problems",
+      "Complex sites require ongoing maintenance"
+    ],
+    "example": {
+      "name": "Columbia CPA Group",
+      "url": "https://columbiacpagroup.com/"
+    },
+    "sources": [
+      "https://manual.joomla.org/docs/next/get-started/technical-requirements/",
+      "https://showcase.joomla.org/browse-sites/25873.html"
+    ]
+  },
+  {
+    "name": "Shopify",
+    "support": "Commercial subscription-based platform developed and hosted by Shopify Inc.",
+    "technology": "Shopify-managed cloud platform and database, Liquid templates, HTML, CSS, and JavaScript.",
+    "capabilities": [
+      "Online stores with integrated checkout",
+      "Inventory, order, and payment management",
+      "Themes, apps, and sales analytics"
+    ],
+    "limitations": [
+      "Monthly subscription and possible additional fees",
+      "Limited control over backend infrastructure",
+      "Advanced features may require paid apps"
+    ],
+    "example": {
+      "name": "Gymshark",
+      "url": "https://www.gymshark.com/"
+    },
+    "sources": [
+      "https://shopify.dev/docs/storefronts/themes/architecture",
+      "https://www.shopify.com/my/enterprise/blog/brands-using-shopify-plus"
+    ]
+  },
+  {
+    "name": "Wix",
+    "support": "Commercial website-building and hosting platform operated by Wix.com Ltd.",
+    "technology": "Wix-managed cloud hosting and database collections, JavaScript, Node.js through Velo, HTML, and CSS.",
+    "capabilities": [
+      "Visual drag-and-drop website editor",
+      "Built-in CMS, booking, and ecommerce features",
+      "Custom JavaScript functionality through Velo"
+    ],
+    "limitations": [
+      "Less control over hosting infrastructure",
+      "Moving an entire site to another platform is difficult",
+      "Some advanced features require paid plans"
+    ],
+    "example": {
+      "name": "Izzy Wheels",
+      "url": "https://www.izzywheels.com/"
+    },
+    "sources": [
+      "https://support.wix.com/en/article/developing-custom-websites",
+      "https://www.wix.com/blog/wix-websites-examples"
+    ]
+  }
+]
